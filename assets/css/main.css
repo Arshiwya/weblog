@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "irancell";
+    src: url(../fonts/irancell.otf);
+  }
+
+html {
+    direction: rtl;
+    font-family: "irancell";
+}
+
+.header {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 14%, rgba(108,231,255,1) 72%);
+}
+
+.main-contetnt {
+    position: relative;
+}
+
+.footer {
+
+}
+
+.navbar {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.hamburger-line {
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #616161;
+    transition: 200ms ease;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.rotate-left {
+    transform: translateY(10px) rotate(-45deg);
+
+}
+.rotate-right {
+    transform: translateY(-10px) rotate(45deg);
+}
+
+.navbar__logo {
+    font-size: 1.4rem;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: -180px;
+    width: 40%;
+    height: 100vh;
+    background-color: #eaeaea;
+    transition: 200ms ease;
+}
+
+.sidebar--open {
+    right: 0;
+}
+
+.sidebar__list {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px;
+    gap: 10px;
+}
+
+.sidebar__list__item {
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.sidebar__list__item__link {
+    width: 100%;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: black;
+}
