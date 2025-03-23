@@ -61,11 +61,12 @@ body {
 }
 
 .menu {
-    padding: 0 18px;
+    padding: 0 20px;
     background-color: #ccd5ae;
     max-height: 0px;
     overflow: hidden;
     transition: max-height 200ms ease;
+   
 }
 
 
@@ -99,4 +100,98 @@ body {
     display: block;
     width: 25%;
 
+}
+
+.hot-posts {
+
+    background-color:#faedcd;
+    margin: 20px 0;
+    padding: 25px;
+    font-weight: bold;
+
+}
+
+.hot-posts__title {
+    margin: 10px 0;
+
+}
+
+.hot-posts__title__text {
+
+}
+
+.hot-posts__list {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.hot-posts__list__item {
+
+    width: 90%;
+    background-color: white;
+
+}
+
+.hot-posts__list__item__image {
+    width: 100%;
+    max-height: 200px;
+}
+
+.hot-posts__list__item__title {
+    padding: 20px 10px;
+    line-height: 1.6rem;
+}
+.hot-posts__list__item__description {
+
+}
+
+.hot-posts__list__item__footer {
+    padding: 0 10px;
+}
+
+.hot-posts__list__item__footer__author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid grey;
+    padding: 10px;
+}
+
+.hot-posts__list__item__footer__author__image {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.hot-posts__list__item__footer__author__name {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.hot-posts__list__item__title__link {
+    color: #4d4d4d;
+    font-weight: normal;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.hot-posts__list__item__footer__tags {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    padding: 10px;
+
+    }
+
+.hot-posts__list__item__footer__tags__item {
+    color: black;
+    text-align: center;
+    background-color: #ccd5ae;
+    font-size: 0.7rem;
+    width: 20%;
+    padding: 10px 0px;
+    border-radius: 5px;
 }
