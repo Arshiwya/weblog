@@ -1,5 +1,5 @@
 let hamburger = document.getElementById("hamburger")
-let sidebar = document.getElementById("sidebar")
+let menu = document.getElementById("menu")
 let firstLine = document.getElementById("firstLine")
 let midLine = document.getElementById("midLine")
 let lastLine = document.getElementById("lastLine")
@@ -15,7 +15,10 @@ function toggleMenu () {
        midLine.classList.add("hidden")
        lastLine.classList.add("rotate-right")
 
-       sidebar.classList.add("sidebar--open")
+       menu.classList.remove("menu--close")
+       menu.classList.add("menu--open")
+       
+
         
     }
 
@@ -26,7 +29,9 @@ function toggleMenu () {
         midLine.classList.remove("hidden")
         lastLine.classList.remove("rotate-right")
 
-        sidebar.classList.remove("sidebar--open")
+        menu.classList.remove("menu--open")
+        menu.classList.add("menu--close")
+        
     }
 
 }

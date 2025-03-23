@@ -11,10 +11,11 @@ html {
 .header {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 14%, rgba(108,231,255,1) 72%);
+
 }
 
 .main-contetnt {
-    position: relative;
+
 }
 
 .footer {
@@ -60,35 +61,43 @@ html {
     font-size: 1.4rem;
 }
 
-.sidebar {
-    position: absolute;
-    top: 0;
-    right: -180px;
-    width: 40%;
-    height: 100vh;
-    background-color: #eaeaea;
-    transition: 200ms ease;
+.menu {
+    padding: 0 18px;
+    background-color: #f2f2f2;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 200ms ease;
 }
 
-.sidebar--open {
-    right: 0;
+
+.menu--open {
+    max-height: 150px;
 }
 
-.sidebar__list {
+
+
+.menu__list {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    padding: 40px 10px;
-    gap: 10px;
 }
 
-.sidebar__list__item {
-    font-size: 1.2rem;
-    display: flex;
+.menu__list__item {
+    /* font-size: 1.2rem;
+    display: flex; */
 }
 
-.sidebar__list__item__link {
+.menu__list__item__link {
+    display: block;
     width: 100%;
-    padding: 10px 0px;
+    box-sizing: border-box;
     text-decoration: none;
-    color: black;
+    color: #315fcafc;
+    padding: 10px;
+}
+
+.menu__list__item__link__text {
+    display: block;
+    width: 25%;
+
 }
