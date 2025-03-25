@@ -5,6 +5,7 @@ html {
 
 body {
     background-color: #fefae0;
+    position: relative;
 }
 
 .header {
@@ -20,7 +21,7 @@ body {
 }
 
 .navbar {
-    padding: 20px 10px;
+    padding:10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -387,4 +388,68 @@ color: #4d4d4d;
         justify-content: center;
         align-items: center;
         gap: 5px;
+}
+
+.navbar-search {
+
+}
+.navbar-search__icon {
+    width: 35px;
+    height: 35px;
+}
+
+.search {
+    display: none;
+    flex-direction: column;
+    top: 0;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+}
+
+.search-header {
+    display: flex
+    ;
+        justify-content: left;    
+}
+
+.search-header__close-icon {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.search-form {
+    margin: 0 auto;
+    width: 95%;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid grey;
+    padding: 30px 0;
+}
+
+.search-form__input {
+    padding: 10px 15px;
+    width: 85%;
+    border: 0;
+    background-color: #e4e4e4;
+    font-family: 'irancell';
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.search-form__button {
+    border: 0;
+    background-color: #1c274c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'vazir';
+    font-weight: bold;
 }

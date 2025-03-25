@@ -4,6 +4,8 @@ let firstLine = document.getElementById("firstLine")
 let midLine = document.getElementById("midLine")
 let lastLine = document.getElementById("lastLine")
 
+let searchPanel = document.getElementById("searchPanel")
+
 
 function toggleMenu () {
 
@@ -33,5 +35,17 @@ function toggleMenu () {
         menu.classList.add("menu--close")
         
     }
+
+}
+
+function searchClose () {
+
+    searchPanel.style.display = "none"
+
+}
+
+function searchOpen () {
+
+    searchPanel.style.display = "flex"
 
 }
