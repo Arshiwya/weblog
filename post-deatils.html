@@ -69,6 +69,34 @@
 
     </div>
 
+    <div  id="loginBox" class="login-box">
+
+        <div class="login-box__body">
+
+            <div class="login-box-header">
+                <svg onclick="loginBoxClose()" class="login-box-header__close-icon" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22ZM8.96965 8.96967C9.26254 8.67678 9.73742 8.67678 10.0303 8.96967L12 10.9394L13.9696 8.96969C14.2625 8.6768 14.7374 8.6768 15.0303 8.96969C15.3232 9.26258 15.3232 9.73746 15.0303 10.0303L13.0606 12L15.0303 13.9697C15.3232 14.2625 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2625 15.3232 13.9696 15.0303L12 13.0607L10.0303 15.0303C9.73744 15.3232 9.26256 15.3232 8.96967 15.0303C8.67678 14.7374 8.67678 14.2626 8.96967 13.9697L10.9393 12L8.96965 10.0303C8.67676 9.73744 8.67676 9.26256 8.96965 8.96967Z" fill="#1C274C"/>
+                    </svg>
+            </div>
+            
+            <div class="login-box__body__content">
+                <div class="login-box__body__content__message">
+                    <p class="login-box__body__content__message__text">
+                        کاربر گرامی برای دسترسی بهتر وارد حساب خود شوید !
+                    </p>
+                </div>
+                <a href="#" class="login-box__body__content__link login-box__body__content__link__login">ورود</a>
+                <a href="#" class="login-box__body__content__link login-box__body__content__link__signin">ثبت نام</a>
+            </div>
+
+
+        </div>
+
+
+        
+
+
+    </div>
 
     <main class="main-contetnt">
 
@@ -131,7 +159,7 @@
                 
                 <div class="post-footer">
                     <div class="post-footer__right">
-                        <div class="post-footer__right__like-box">
+                        <div  class="post-footer__right__like-box" onclick="loginBoxOpen()">
                             <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
                             class="size-6 post-footer__right__like-box__like-icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
@@ -141,7 +169,7 @@
 
                         </div>
 
-                        <div class="post-footer__right__comment-box">
+                        <div class="post-footer__right__comment-box" onclick="loginBoxOpen()">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
                             class="size-6 post-footer__right__comment-box__comment-icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
@@ -153,6 +181,119 @@
                     </div>
                 </div>
 
+
+            </div>
+
+            
+            <div class="comments">
+                <div class="comments-header">
+                    <svg class="comments-header__icon" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <title>comment 2</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-154.000000, -257.000000)" fill="#ccd5ae"> <path d="M177,270 L163,270 C162.448,270 162,269.553 162,269 C162,268.448 162.448,268 163,268 L177,268 C177.552,268 178,268.448 178,269 C178,269.553 177.552,270 177,270 L177,270 Z M175,276 L165,276 C164.448,276 164,275.553 164,275 C164,274.447 164.448,274 165,274 L175,274 C175.552,274 176,274.447 176,275 C176,275.553 175.552,276 175,276 L175,276 Z M170,257 C161.164,257 154,263.269 154,271 C154,275.419 156.345,279.354 160,281.919 L160,289 L167.009,284.747 C167.979,284.907 168.977,285 170,285 C178.836,285 186,278.732 186,271 C186,263.269 178.836,257 170,257 L170,257 Z" id="comment-2" sketch:type="MSShapeGroup"> </path> </g> </g> </g>
+                        
+                        </svg>
+                    
+                        <span class="comments-header__text">نظرات</span>
+                </div>
+
+                <div class="comments__login-required" onclick="loginBoxOpen()">
+                    <img src="./assets/images/default.png" alt="user" class="comments__login-required__image">
+                    <span class="comments__login-required__message">نظر خود را درباره این پست بنویسید </span>
+                </div>
+                
+                <div class="comments__list">
+
+                    <div class="comments__list__item">
+                        <div class="comments__list__item__header">
+                            <img src="./assets/images/default.png" alt="user" class="comments__list__item__header__image">
+
+                            <div class="comments__list__item__header__info">
+                                <span class="comments__list__item__header__info__name">Kasra</span>
+                                <span class="comments__list__item__header__info__date">15روز پیش</span>
+                            </div>
+                        </div>
+
+                        <div class="comments__list__item__body">
+                            <p class="comments__list__item__body__text">لگوریتم نمیتونه علاقه‌مند بشه چون «کنشگر» نیست. عملکردی که از خودش نشون میده رو میشه این‌طور تفسیر کرد که صرفا داره وانمود میکنه علاقه‌منده و وانمودکردن برابر با اصل عمل علاقه‌مندی نیست.</p>
+                        </div>
+
+                        <div class="comments__list__item__footer">
+                            <div class="comments__list__item__footer__right">
+                                <div class="comments__list__item__footer__right__like-box">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                                    class="size-6 comments__list__item__footer__right__like-box__like-icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                      </svg>
+                                    
+                                      <span class="comments__list__item__footer__right__like-box__counter">26</span>
+        
+                                </div>
+                            </div>
+                            <div class="comments__list__item__footer__left">
+                                <div class="comments__list__item__footer__left__reply-box">
+                                    <svg class="comments__list__item__footer__left__reply-box__icon" width="800px" height="800px" viewBox="-0.5 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        
+                                        <g id="SVGRepo_iconCarrier"> <title>reply</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-102.000000, -1195.000000)" fill="#000000"> <path d="M113.983,1202.01 L113.983,1196.11 C114.017,1195.81 113.936,1195.51 113.708,1195.28 C113.312,1194.89 112.67,1194.89 112.274,1195.28 L102.285,1206.24 C102.074,1206.45 101.984,1206.72 101.998,1207 C101.984,1207.27 102.074,1207.55 102.285,1207.76 L112.219,1218.65 C112.59,1218.97 113.271,1219.15 113.708,1218.71 C113.935,1218.49 114.035,1218.29 114,1218 L114,1212 C120.6,1212 126.569,1216.75 127.754,1223.01 C128.552,1221.17 129,1219.15 129,1217.02 C129,1208.73 122.276,1202.01 113.983,1202.01" id="reply" sketch:type="MSShapeGroup"> </path> </g> </g> </g>
+                                        
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="comments__list__item">
+                        <div class="comments__list__item__header">
+                            <img src="./assets/images/user.jpg" alt="user" class="comments__list__item__header__image">
+
+                            <div class="comments__list__item__header__info">
+                                <span class="comments__list__item__header__info__name">عرشیا سهرابی</span>
+                                <span class="comments__list__item__header__info__date">15روز پیش</span>
+                            </div>
+                        </div>
+
+                        <div class="comments__list__item__body">
+                            <p class="comments__list__item__body__text">با این تفاسیر فکر کنم deep seek عاشقم شده</p>
+                        </div>
+
+                        <div class="comments__list__item__footer">
+                            <div class="comments__list__item__footer__right">
+                                <div class="comments__list__item__footer__right__like-box">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                                    class="size-6 comments__list__item__footer__right__like-box__like-icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                      </svg>
+                                    
+                                      <span class="comments__list__item__footer__right__like-box__counter">26</span>
+        
+                                </div>
+                            </div>
+                            <div class="comments__list__item__footer__left">
+                                <div class="comments__list__item__footer__left__reply-box">
+                                    <svg class="comments__list__item__footer__left__reply-box__icon" width="800px" height="800px" viewBox="-0.5 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        
+                                        <g id="SVGRepo_iconCarrier"> <title>reply</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-102.000000, -1195.000000)" fill="#000000"> <path d="M113.983,1202.01 L113.983,1196.11 C114.017,1195.81 113.936,1195.51 113.708,1195.28 C113.312,1194.89 112.67,1194.89 112.274,1195.28 L102.285,1206.24 C102.074,1206.45 101.984,1206.72 101.998,1207 C101.984,1207.27 102.074,1207.55 102.285,1207.76 L112.219,1218.65 C112.59,1218.97 113.271,1219.15 113.708,1218.71 C113.935,1218.49 114.035,1218.29 114,1218 L114,1212 C120.6,1212 126.569,1216.75 127.754,1223.01 C128.552,1221.17 129,1219.15 129,1217.02 C129,1208.73 122.276,1202.01 113.983,1202.01" id="reply" sketch:type="MSShapeGroup"> </path> </g> </g> </g>
+                                        
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
     
 

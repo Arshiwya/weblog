@@ -6,6 +6,8 @@ let lastLine = document.getElementById("lastLine")
 
 let searchPanel = document.getElementById("searchPanel")
 
+let loginBox = document.getElementById("loginBox")
+
 
 function toggleMenu () {
 
@@ -48,4 +50,14 @@ function searchOpen () {
 
     searchPanel.style.display = "flex"
 
+}
+
+function loginBoxOpen () {
+    
+    loginBox.style.display = "flex"
+
+}
+
+function loginBoxClose () {
+        loginBox.style.display = "none"
 }
