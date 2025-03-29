@@ -42,13 +42,13 @@ function toggleMenu () {
 
 function searchClose () {
 
-    searchPanel.style.display = "none"
+     searchPanel.style.left = "450px"
 
 }
 
 function searchOpen () {
 
-    searchPanel.style.display = "flex"
+    searchPanel.style.left = 0
 
 }
 
